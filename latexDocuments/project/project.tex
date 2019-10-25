@@ -1,43 +1,184 @@
-\title{Datathon Group 3}
+
+\documentclass[11pt]{article}
+
+\usepackage[margin = 0.7 in]{geometry}
+\usepackage[pdftex]{graphicx}
+\graphicspath{{images/}}
+\usepackage{subfigure}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{array}
+%\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{url}
+
+\hyphenation{op-tical net-works semi-conduc-tor re-co-mmen-ded}
+
+
+\title{Project Group 3}
 \author{ Johnathan Salamanca, Mario Cer\'{o}n, \\
 Carol Martinez, Javier Cocunubo, Jairo Nino, Alvaro Munoz
  }
 \date{\today}
 
-\documentclass[12pt]{article}
-
 \begin{document}
 \maketitle
 
-\begin{abstract}
+%\begin{abstract}
 
-In this document \ldots
-\end{abstract}
+%In this document \ldots
+%\end{abstract}
 
+
+\input{sections/introduction}
 
 
 \section{Multiple Problem Versions (week 3)}
 \label{sec:app}
-All versions should naturally build on top of each other
-? V1 should be pretty easy and reasonable
-? The last version can be moonshot - the idea is that you must implement
-for V1 first, then V2, etc. so as to guarantee some sort of finished build by
-the end of Week 10. If you can get to V2, V3, etc. by the end, great, if not,
-at the very least you have something done that you can present)
+%All versions should naturally build on top of each other
+%? V1 should be pretty easy and reasonable
+%? The last version can be moonshot - the idea is that you must implement
+%for V1 first, then V2, etc. so as to guarantee some sort of finished build by
+%the end of Week 10. If you can get to V2, V3, etc. by the end, great, if not,
+%at the very least you have something done that you can present)
+%Business Problem. Your main task is to explore the data and identify patterns of crime in Chicago, and come up with strategies to efficiently deploy your workforce to fight crime.
+
+Based on the previously presented information different questions have arisen. 
+\begin{enumerate}
+
+%\item{In 2012 was created in Colombia the National System of Risk Management. Based on the available datasets is it possible to analyze and find patterns that show (\textbf{V3}), 
+%\begin{itemize}
+%\item how does the risk map of Colombia changed after the creation of this system? 
+%\item How does the specific infrastructure affects the impact of the specific event? 
+%\end{itemize}
+%}
+
+\item{There is a disproportionate impact of similar events among Colombia's municipalities, given by disparities in available infrastructure and first response resources  (\textbf{V2}).}
+
+
+\item{Is it possible to analyze a specific event (disaster) and show how does the same event  affects different zones of the country? Based on that, we can analyze (\textbf{V1}):
+\begin{itemize}
+\item Are there factors that make some zones more vulnerable than others?
+\item How does the specific infrastructure affects the impact of the specific event? 
+\end{itemize}
+}
+\end{enumerate}
+
+%\subsection{Question}
+
 
 \section{Datasets sourced (week 3)}
 \label{sec:app}
 
+The main dataset used in the project is from the Colombia Risk of Disaster Management Unit (Unidad de Gesti\'{o}n de Riesgos y Desastres) UNGRD \cite{datasetUNGRD}. The dataset contains information about  the risk management associated with natural phenomena, socio-natural, technologic, and human-based non-intentional incidents reported in Colombia in the last 10 years (38626 records). Some of the fields found in the dataset are: Date, Department, Municipality, Event Name, Code, Dead, Wounded, Disappeared, Affected People, Affected Families, Affected Houses, among others. 
+
+The team will also use a dataset from the National Administrative Department for Statistics DANE. It is a time series between 1985 to 2020 and contains information, per department code about \cite{DANE} .
+
+Both datasets contain ``DIVIPOL'' codes, which is the codification of the Politica-Administrative Division of Colombia (Codification of the departments, ). Figure \ref{fig:divipol} describes the meaning of the code. The first two numbers correspond to the department, followed by the Municipality Code and the Populated Center [\cite{divipola}].
+ 
+
+\begin{figure}[!ht]
+        \center{\includegraphics[width=0.6\textwidth]
+        {divipolaExplanation}}
+        \caption{Explanation of ``DIVIPOL'' code. The codes provide information of the Politica-Administrative Division of Colombia. Image taken from \cite{divipol}}
+        \label{fig:divipol}
+      \end{figure}
+      
+
+Table \ref{tabDataset} summarizes the information of the datasets. 
+
+\begin{table}[h]
+\begin{center}
+\label{tabDataset}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Data Name} & \textbf{Description} & \textbf{Type} & \textbf{Number} & \textbf{Database}   \\
+\hline
+ Event name: & type of disaster (flooding,XX)& categorical &S &  UNGRD\\
+ Date: & incident date & numerical &XXX &  UNGRD/DANE  \\
+ Code: &disaster ID & numerical &XXX &  UNGRD/DANE  \\
+ Municipality Code: & Divipol code & numerical &XXX &  UNGRD/DANE  \\
+ Dead: & Deads per incident & numerical &XXX &  UNGRD  \\
+ Wounded: & Wound per incident & numerical &XXX &  UNGRD  \\
+ Disappeared: & Disappeared per incident & numerical &XXX &  UNGRD  \\
+  Affected: & Affected people & numerical &XXX &  UNGRD  \\
+   Affected families: & Affected people & numerical &XXX &  UNGRD  \\
+\hline
+\end{tabular}
+ \caption{Summary of the main information available to develop the project.}
+\end{center}
+\end{table}
+      
+
+
+
+%  (data of ):
+%http://portal.gestiondelriesgo.gov.co/Paginas/Consolidado-Atencion-de-Emergencias.aspx
+%We plan to cross data from the previous dataset with data from the DANE, IDEAM
+%We may require datasets to extract data of:
+%Hospitals available in the area
+%Schools
+%Emergency services available.
+%Demographic data
+
+
+
+%Santos talks about Colombia Progress on Risk Management https://www.unisdr.org/archive/58870
+
+%? ?El Niño? and particularly the La Niña 2010-2011, which generated a national emergency situation never before seen in the country, affecting nearly 765 municipalities in Colombia, ?. After these phenomena, the government decided to improve the gathering information systems (info taken from
+%https://library.wmo.int/doc_num.php?explnum_id=4759 )
+
+
 \section{Project scoping plan/proposal written (week 3)}
 \label{sec:app}
 
-\input{sections/introduction}
-\input{sections/applicationOverview}
-\input{sections/technicalExposition}
+\subsection{Project scopes}
+
+\begin{itemize}
+\item The Government Officials (at all levels) are our main stakeholders
+\item Boundaries of the project:
+\begin{itemize}
+\item We do not offer forecasts or modeling/ infer data.
+\item We only show metrics of impact of disasters at municipal level (not pin point to specific disaster event)
+\item We do not offer recommendations, only do support to decision making process for the stakeholders.
+\end{itemize}
+\item Note the biggest risks to the successful completion of the project.
+\begin{itemize}
+\item Data quality issues in the datasets (non fixed easily)
+\item The final comparison product does not have sufficient enough information consolidated to explain the main problem to be resolved.
+\end{itemize}
+\end{itemize}
+
+
+\subsection{Project plan}
+
+\textbf{Problem}: there is a disproportionate impact of similar events among Colombia?s municipalities,
+given by disparities in available infrastructure and first response resources. Impact is defined in terms of: Inhabitants affected/Thousand Inhabitants, percentage of households affected, Deceased/ Thousand Inhabitants.\\
+
+\textbf{Expected Deliverable}:\\
+A dynamic map of Colombia, visually delivering the impact metric (or metrics) at the municipal level for a given category of events. Ability to display complementary metrics of interest for specific locations (utilities, healthcare facilities, first-responders facilities, etc).\\
+
+\textbf{How do we get there?}:
+
+\begin{itemize}
+\item Get datasets, cleaned, wrangled and analyzed. 
+\item Make the relevant joins on jupyter notebooks (localy), merge and generate bases to have the data (modeling, generate parameters and boundaries)
+\item Load the data at the database in the cloud (RDS on AWS) and the instance (EC2) for host the back and front end. Install and review the environment.
+\item Make the back end: review databases, environment and set jupyter / notebooks for run the cloud
+\item Make the front end : Interactive Colombian Map in Dash and tested on AWS.
+\item Make the final presentation
+\item Make the final report
+\end{itemize}
+
+%\input{sections/applicationOverview}
+%\input{sections/technicalExposition}
 
 
 \bibliographystyle{abbrv}
-\bibliography{simple}
+\bibliography{project}
 
 \end{document}
 This is never printed
