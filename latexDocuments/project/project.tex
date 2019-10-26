@@ -48,21 +48,21 @@ Carol Martinez, Javier Cocunubo, Jairo Nino, Alvaro Munoz
 \textbf{Version 1}
 
 \begin{itemize}
-\item{There is no information available online with the Disaster Risks panorama in Colombia}
+\item{There is no information available online wit the Disaster Risks panorama in Colombia}
 \item{The information available online about Disaster Risks in Colombia corresponds to Excel files, and to some reports created by the government with insights of the Disaster Risks panorama in Colombia. However, the information is not published in such a way that anyone can use to get easy-to-see information about the current risk state of a specific area. }
 \end{itemize}
-
+Lorem ipsum 
 
 \subsection{Question}
 
-Based on the previously presented information different questions have arisen. 
+Based on the previously presented information different questions have arisen.
 
 \begin{enumerate}
 
 
-\item{In 2012, the National System of Risk Management was created in Colombia. Based on the available datasets is it possible to analyze and find patterns that show (\textbf{V3}), 
+\item{In 2012, the National System of Risk Management was created in Colombia. Based on the available datasets is it possible to analyze and find patterns that show (\textbf{V3}),
 \begin{itemize}
-\item how does the risk map of Colombia changed after the creation of this system? 
+\item how does the risk map of Colombia changed after the creation of this system?
 \end{itemize}
 }
 
@@ -73,7 +73,7 @@ Based on the previously presented information different questions have arisen.
 \item{Is it possible to analyze a specific event (disaster) and show how does the same event  affects different zones of the country? Based on that, we can analyze (\textbf{V1}):
 \begin{itemize}
 \item Are there factors that make some zones more vulnerable than others?
-\item How does the specific infrastructure affects the impact of the specific event? 
+\item How does the specific infrastructure affects the impact of the specific event?
 \end{itemize}
 }
 \end{enumerate}
@@ -84,12 +84,12 @@ Based on the previously presented information different questions have arisen.
 \section{Datasets sourced (week 3)}
 \label{sec:app}
 
-The main dataset used in the project is from the Colombia Risk of Disaster Management Unit (Unidad de Gesti\'{o}n de Riesgos y Desastres) UNGRD \cite{datasetUNGRD}. The dataset contains information about  the risk management associated with natural phenomena, socio-natural, technologic, and human-based non-intentional incidents reported in Colombia in the last 10 years (38626 records). Some of the fields found in the dataset are: Date, Department, Municipality, Event Name, Code, Dead, Wounded, Disappeared, Affected People, Affected Families, Affected Houses, among others. 
+The main dataset used in the project is from the Colombia Risk of Disaster Management Unit (Unidad de Gesti\'{o}n de Riesgos y Desastres) UNGRD \cite{datasetUNGRD}. The dataset contains information about  the risk management associated with natural phenomena, socio-natural, technologic, and human-based non-intentional incidents reported in Colombia in the last 10 years (38626 records). Some of the fields found in the dataset are: Date, Department, Municipality, Event Name, Code, Dead, Wounded, Disappeared, Affected People, Affected Families, Affected Houses, among others.
 
 The team will also use a dataset from the National Administrative Department for Statistics DANE. It is a time series between 1985 to 2020 and contains information, per department code about \cite{DANE} .
 
 Both datasets contain ``DIVIPOL'' codes, which is the codification of the Politica-Administrative Division of Colombia (Codification of the departments, ). Figure \ref{fig:divipol} describes the meaning of the code. The first two numbers correspond to the department, followed by the Municipality Code and the Populated Center [\cite{divipola}].
- 
+
 
 \begin{figure}[!ht]
         \center{\includegraphics[width=0.6\textwidth]
@@ -97,9 +97,9 @@ Both datasets contain ``DIVIPOL'' codes, which is the codification of the Politi
         \caption{Explanation of ``DIVIPOL'' code. The codes provide information of the Politica-Administrative Division of Colombia. Image taken from \cite{divipol}}
         \label{fig:divipol}
       \end{figure}
-      
 
-Table \ref{tabDataset} summarizes the information of the datasets. 
+
+Table \ref{tabDataset} summarizes the information of the datasets.
 
 \begin{table}[h]
 \begin{center}
@@ -122,7 +122,7 @@ Table \ref{tabDataset} summarizes the information of the datasets.
  \caption{Summary of the main information available to develop the project.}
 \end{center}
 \end{table}
-      
+
 
 
 
@@ -139,7 +139,7 @@ Table \ref{tabDataset} summarizes the information of the datasets.
 
 %Santos talks about Colombia Progress on Risk Management https://www.unisdr.org/archive/58870
 
-%? ?El Niño? and particularly the La Niña 2010-2011, which generated a national emergency situation never before seen in the country, affecting nearly 765 municipalities in Colombia, ?. After these phenomena, the government decided to improve the gathering information systems (info taken from
+%? ?El Niï¿½o? and particularly the La Niï¿½a 2010-2011, which generated a national emergency situation never before seen in the country, affecting nearly 765 municipalities in Colombia, ?. After these phenomena, the government decided to improve the gathering information systems (info taken from
 %https://library.wmo.int/doc_num.php?explnum_id=4759 )
 
 
@@ -175,7 +175,7 @@ A dynamic map of Colombia, visually delivering the impact metric (or metrics) at
 \textbf{How do we get there?}:
 
 \begin{itemize}
-\item Get datasets, cleaned, wrangled and analyzed. 
+\item Get datasets, cleaned, wrangled and analyzed.
 \item Make the relevant joins on jupyter notebooks (localy), merge and generate bases to have the data (modeling, generate parameters and boundaries)
 \item Load the data at the database in the cloud (RDS on AWS) and the instance (EC2) for host the back and front end. Install and review the environment.
 \item Make the back end: review databases, environment and set jupyter / notebooks for run the cloud
