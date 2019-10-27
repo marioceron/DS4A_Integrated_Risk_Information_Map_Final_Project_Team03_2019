@@ -1,7 +1,6 @@
-divipola
 \documentclass[11pt]{article}
 
-\usepackage[margin = 0.7 in]{geometry}
+\usepackage[margin = 1 in]{geometry}
 \usepackage[pdftex]{graphicx}
 \graphicspath{{images/}}
 \usepackage{subfigure}
@@ -36,7 +35,7 @@ Carol Martinez, Javier Cocunubo, Jairo Nino, Alvaro Munoz
 \input{sections/introduction}
 
 
-\section{Multiple Problem Versions (week 3)}
+\section{Multiple Problem Versions}
 \label{sec:app}
 %All versions should naturally build on top of each other
 %? V1 should be pretty easy and reasonable
@@ -45,12 +44,16 @@ Carol Martinez, Javier Cocunubo, Jairo Nino, Alvaro Munoz
 %the end of Week 10. If you can get to V2, V3, etc. by the end, great, if not,
 %at the very least you have something done that you can present)
 %Business Problem. Your main task is to explore the data and identify patterns of crime in Chicago, and come up with strategies to efficiently deploy your workforce to fight crime.
-\textbf{Version 1}
 
-\begin{itemize}
-\item{There is no information available online wit the Disaster Risks panorama in Colombia}
-\item{The information available online about Disaster Risks in Colombia corresponds to Excel files, and to some reports created by the government with insights of the Disaster Risks panorama in Colombia. However, the information is not published in such a way that anyone can use to get easy-to-see information about the current risk state of a specific area. }
-\end{itemize}
+\textbf{Version 1}\\
+
+The Municipal Capacities-Adjusted Disaster Risk Index is an innovative indicator for policymakers to make informed decisions about how to better preserve citizens\' well-being in the presence of real and potential threats. However, to be actionable, information needs not only to be available but efficiently delivered to communities, as a mean of protecting citizen\'s rights, foster economic growth, and make government officials accountable. 
+As per its current state, official risk management information lacks a delivery system that enables local communities to improve their risk awareness and disaster coping capabilities in different scenarios marked for global phenomena such as extreme temperatures and changing weather patterns.For instance, it is not apparent how similar events have impacted communities with different risk and vulnerability profiles, and there is no relevant information to assess the performance of risk management activities.  
+
+%\begin{itemize}
+%\item{There is no information available online wit the Disaster Risks panorama in Colombia}
+%\item{The information available online about Disaster Risks in Colombia corresponds to Excel files, and to some reports created by the government with insights of the Disaster Risks panorama in Colombia. However, the information is not published in such a way that anyone can use to get easy-to-see information about the current risk state of a specific area. }
+%\end{itemize}
 
 
 \subsection{Question}
@@ -99,30 +102,30 @@ Both datasets contain ``DIVIPOLA'' codes, which is the codification of the Polit
       \end{figure}
 
 
-Table \ref{tabDataset} summarizes the information of the datasets.
-
-\begin{table}[h]
-\begin{center}
-\label{tabDataset}
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-\textbf{Data Name} & \textbf{Description} & \textbf{Type} & \textbf{Number} & \textbf{Database}   \\
-\hline
- Event name: & type of disaster (flooding,XX)& categorical &S &  UNGRD\\
- Date: & incident date & numerical &XXX &  UNGRD/DANE  \\
- Code: &disaster ID & numerical &XXX &  UNGRD/DANE  \\
- Municipality Code: & Divipola code & numerical &XXX &  UNGRD/DANE  \\
- Dead: & Deads per incident & numerical &XXX &  UNGRD  \\
- Wounded: & Wound per incident & numerical &XXX &  UNGRD  \\
- Disappeared: & Disappeared per incident & numerical &XXX &  UNGRD  \\
-  Affected: & Affected people & numerical &XXX &  UNGRD  \\
-   Affected families: & Affected people & numerical &XXX &  UNGRD  \\
-\hline
-\end{tabular}
- \caption{Summary of the main information available to develop the project.}
-\end{center}
-\end{table}
-
+%Table \ref{tabDataset} summarizes the information of the datasets.
+%
+%\begin{table}[h]
+%\begin{center}
+%\label{tabDataset}
+%\begin{tabular}{|c|c|c|c|c|}
+%\hline
+%\textbf{Data Name} & \textbf{Description} & \textbf{Type} & \textbf{Number} & \textbf{Database}   \\
+%\hline
+% Event name: & type of disaster (flooding,XX)& categorical &S &  UNGRD\\
+% Date: & incident date & numerical &XXX &  UNGRD/DANE  \\
+% Code: &disaster ID & numerical &XXX &  UNGRD/DANE  \\
+% Municipality Code: & Divipola code & numerical &XXX &  UNGRD/DANE  \\
+% Dead: & Deads per incident & numerical &XXX &  UNGRD  \\
+% Wounded: & Wound per incident & numerical &XXX &  UNGRD  \\
+% Disappeared: & Disappeared per incident & numerical &XXX &  UNGRD  \\
+%  Affected: & Affected people & numerical &XXX &  UNGRD  \\
+%   Affected families: & Affected people & numerical &XXX &  UNGRD  \\
+%\hline
+%\end{tabular}
+% \caption{Summary of the main information available to develop the project.}
+%\end{center}
+%\end{table}
+%
 
 
 
@@ -146,7 +149,7 @@ Table \ref{tabDataset} summarizes the information of the datasets.
 \section{Project scoping plan/proposal written (week 3)}
 \label{sec:app}
 
-\subsection{Project scopes}
+\subsection{Project scope}
 
 \begin{itemize}
 \item The Government Officials (at all levels) are our main stakeholders
@@ -156,40 +159,48 @@ Table \ref{tabDataset} summarizes the information of the datasets.
 \item We only show metrics of impact of disasters at municipal level (not pin point to specific disaster event)
 \item We do not offer recommendations, only do support to decision making process for the stakeholders.
 \end{itemize}
-\item Note the biggest risks to the successful completion of the project.
+\item Risks
 \begin{itemize}
-\item Data quality issues in the datasets (non fixed easily)
-\item The final comparison product does not have sufficient enough information consolidated to explain the main problem to be resolved.
+\item Data quality issues in the datasets 
+\item The available data might be not enough to solve the proposed problem.
 \end{itemize}
 \end{itemize}
 
 
 \subsection{Project plan}
 
-\textbf{Problem}: The Municipal Capacities’-Adjusted Disaster Risk Index is an innovative indicator for policymakers to make informed decisions about how to better preserve citizens’ well-being in the presence of real and potential threats.
-However, to be actionable, information needs not only to be available but efficiently delivered to communities. As a means of protecting citizen’s rights, foster economic growth, and make government officials accountable.
-As per its current state, official risk management information lacks a delivery system that enables local communities to improve their risk awareness and disaster coping capabilities in different scenarios marked for global phenomena such as extreme temperatures and changing weather patterns.
-For instance, it is not apparent how similar events have impacted communities with different risk and vulnerability profiles, relevant information to assess the performance of risk management activities.
+%\textbf{Problem}: The Municipal Capacities’-Adjusted Disaster Risk Index is an innovative indicator for policymakers to make informed decisions about how to better preserve citizens’ well-being in the presence of real and potential threats.
+%However, to be actionable, information needs not only to be available but efficiently delivered to communities. As a means of protecting citizen’s rights, foster economic growth, and make government officials accountable.
+%As per its current state, official risk management information lacks a delivery system that enables local communities to improve their risk awareness and disaster coping capabilities in different scenarios marked for global phenomena such as extreme temperatures and changing weather patterns.
+%For instance, it is not apparent how similar events have impacted communities with different risk and vulnerability profiles, relevant information to assess the performance of risk management activities.
 
- Impact is defined in terms of: Inhabitants affected/Thousand Inhabitants, percentage of households affected, Deceased/ Thousand Inhabitants.\\
-
-\textbf{Expected Deliverable}:\\
-To cope with the challenges stated before, our approach includes a dynamic map of Colombia delivering:
-
-1. The impact metric (or metrics) at the municipal level for a given category of events. Ability to display complementary metrics of interest for specific locations (utilities, healthcare facilities, first-responder facilities, etc).
-2. Considering the established association between extreme temperatures and the frequency of hydro-meteorological events, a projected extreme-temperature indicator for the 100 most vulnerable municipalities with 3 data points: Indicator value at Time 0 (1998), Time 1 (2018) and Time 3 (projected 2040)
-3. The indicator corresponds to the extreme temperature projection made by Climate Impact Lab for the number of days a year that register temperatures above 32 degrees Celsius.
-
-\textbf{How do we get there?}:
+ %Impact is defined in terms of: Inhabitants affected/Thousand Inhabitants, percentage of households affected, Deceased/ Thousand Inhabitants.\\
 
 \begin{itemize}
-\item Get datasets, cleaned, wrangled and analyzed.
-\item Make the relevant joins on jupyter notebooks (localy), merge and generate bases to have the data (modeling, generate parameters and boundaries)
-\item Load the data at the database in the cloud (RDS on AWS) and the instance (EC2) for host the back and front end. Install and review the environment.
-\item Make the back end: review databases, environment and set jupyter / notebooks for run the cloud
+\item \textbf{Expected Deliverable}:\\
+To cope with the challenges stated before, our approach includes a dynamic map of Colombia delivering:
+
+\begin{enumerate}
+\item The impact metric (or metrics) at the municipal level for a given category of events. Ability to display complementary metrics of interest for specific locations (utilities, healthcare facilities, first-responder facilities, etc).
+\item Considering the established association between extreme temperatures and the frequency of hydro-meteorological events, a projected extreme-temperature indicator for the 100 most vulnerable municipalities with 3 data points: Indicator value at Time 0 (1998), Time 1 (2018) and Time 3 (projected 2040)
+\item The indicator corresponds to the extreme temperature projection made by Climate Impact Lab for the number of days a year that register temperatures above 32 degrees Celsius.
+\end{enumerate}
+
+
+
+
+\item \textbf{How do we get there?}:
+
+\begin{itemize}
+\item Get datasets, clean, wrangled, and analyze them.
+\item Data modeling
+\item Load the data in the cloud (RDS on AWS) and the instance (EC2) for hosting the back and front ends. Install and review the environment.
+\item Make the back end: review databases, environment and set the code for running in the cloud
 \item Make the front end : Interactive Colombian Map in Dash and tested on AWS.
 \item Make the final presentation
 \item Make the final report
+\end{itemize}
+
 \end{itemize}
 
 %\input{sections/applicationOverview}
