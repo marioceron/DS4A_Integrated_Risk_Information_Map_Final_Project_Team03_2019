@@ -13,9 +13,7 @@
 \usepackage{multirow}
 \usepackage{amsmath}
 \usepackage{url}
-
-\hyphenation{op-tical net-works semi-conduc-tor re-co-mmen-ded}
-
+\renewcommand\UrlFont{\color{blue}}
 
 \title{Project Group 3}
 \author{ Johnathan Salamanca, Mario Cer\'{o}n, \\
@@ -148,28 +146,28 @@ Both datasets contain ``DIVIPOLA'' codes, which is the codification of the Polit
 %https://library.wmo.int/doc_num.php?explnum_id=4759 )
 
 
-\section{Project scoping plan/proposal written}
-\label{sec:app}
+%\section{Project scoping plan/proposal written}
+%\label{sec:app}
 
-\subsection{Project scope}
+%\subsection{Project scope}
+%
+%\begin{itemize}
+%\item The Government Officials (at all levels) are our main stakeholders
+%\item Boundaries of the project:
+%\begin{itemize}
+%\item We do not offer forecasts or modeling/ infer data.
+%\item We only show metrics of impact of disasters at municipal level (not pin point to specific disaster event)
+%\item We do not offer recommendations, only do support to decision making process for the stakeholders.
+%\end{itemize}
+%\item Risks
+%\begin{itemize}
+%\item Data quality issues in the datasets 
+%\item The available data might be not enough to solve the proposed problem.
+%\end{itemize}
+%\end{itemize}
 
-\begin{itemize}
-\item The Government Officials (at all levels) are our main stakeholders
-\item Boundaries of the project:
-\begin{itemize}
-\item We do not offer forecasts or modeling/ infer data.
-\item We only show metrics of impact of disasters at municipal level (not pin point to specific disaster event)
-\item We do not offer recommendations, only do support to decision making process for the stakeholders.
-\end{itemize}
-\item Risks
-\begin{itemize}
-\item Data quality issues in the datasets 
-\item The available data might be not enough to solve the proposed problem.
-\end{itemize}
-\end{itemize}
 
-
-\subsection{Project plan}
+%\subsection{Project plan}
 
 %\textbf{Problem}: The Municipal Capacities’-Adjusted Disaster Risk Index is an innovative indicator for policymakers to make informed decisions about how to better preserve citizens’ well-being in the presence of real and potential threats.
 %However, to be actionable, information needs not only to be available but efficiently delivered to communities. As a means of protecting citizen’s rights, foster economic growth, and make government officials accountable.
@@ -178,33 +176,33 @@ Both datasets contain ``DIVIPOLA'' codes, which is the codification of the Polit
 
  %Impact is defined in terms of: Inhabitants affected/Thousand Inhabitants, percentage of households affected, Deceased/ Thousand Inhabitants.\\
 
-\begin{itemize}
-\item \textbf{Expected Deliverable}:\\
-To cope with the challenges stated before, our approach includes a dynamic map of Colombia delivering:
-
-\begin{enumerate}
-\item The impact metric (or metrics) at the municipal level for a given category of events. Ability to display complementary metrics of interest for specific locations (utilities, healthcare facilities, first-responder facilities, etc).
-\item Considering the established association between extreme temperatures and the frequency of hydro-meteorological events, a projected extreme-temperature indicator for the 100 most vulnerable municipalities with 3 data points: Indicator value at Time 0 (1998), Time 1 (2018) and Time 3 (projected 2040)
-\item The indicator corresponds to the extreme temperature projection made by Climate Impact Lab for the number of days a year that register temperatures above 32 degrees Celsius.
-\end{enumerate}
-
-
+%\begin{itemize}
+%\item \textbf{Expected Deliverable}:\\
+%To cope with the challenges stated before, our approach includes a dynamic map of Colombia delivering:
+%
+%\begin{enumerate}
+%\item The impact metric (or metrics) at the municipal level for a given category of events. Ability to display complementary metrics of interest for specific locations (utilities, healthcare facilities, first-responder facilities, etc).
+%\item Considering the established association between extreme temperatures and the frequency of hydro-meteorological events, a projected extreme-temperature indicator for the 100 most vulnerable municipalities with 3 data points: Indicator value at Time 0 (1998), Time 1 (2018) and Time 3 (projected 2040)
+%\item The indicator corresponds to the extreme temperature projection made by Climate Impact Lab for the number of days a year that register temperatures above 32 degrees Celsius.
+%\end{enumerate}
 
 
-\item \textbf{How do we get there?}:
-
-\begin{itemize}
-\item Get datasets, clean, wrangled, and analyze them.
-\item Data modeling
-\item Load the data in the cloud (RDS on AWS) and the instance (EC2) for hosting the back and front ends. Install and review the environment.
-\item Make the back end: review databases, environment and set the code for running in the cloud
-\item Make the front end : Interactive Colombian Map in Dash and tested on AWS.
-\item Make the final presentation
-\item Make the final report
-\end{itemize}
-
-\end{itemize}
-
+%
+%
+%\item \textbf{How do we get there?}:
+%
+%\begin{itemize}
+%\item Get datasets, clean, wrangled, and analyze them.
+%\item Data modeling
+%\item Load the data in the cloud (RDS on AWS) and the instance (EC2) for hosting the back and front ends. Install and review the environment.
+%\item Make the back end: review databases, environment and set the code for running in the cloud
+%\item Make the front end : Interactive Colombian Map in Dash and tested on AWS.
+%\item Make the final presentation
+%\item Make the final report
+%\end{itemize}
+%
+%\end{itemize}
+%
 \input{sections/applicationOverview}
 %\input{sections/technicalExposition}
 

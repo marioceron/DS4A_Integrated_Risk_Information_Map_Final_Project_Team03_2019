@@ -6,25 +6,8 @@ The data cleaning process was done in two steps:
 \begin{itemize}
 \item For yellow and green cab trips, the rows that have distances equal to $0$ were deleted. This, because we are aiming to take into account only the trips that traveled some distance.
 \item For yellow and green cab trips, the IQR (Inter Quartile Range) methodology was used to clean the outliers from the data. A variable called ``amount\_per\_distance'' was created. It was calculated as the ratio between ``total\_amount" and ``trip\_distance". With this new variable, the values that did not show a common relationship between distance and values were deleted.
-\item The borough polygons were used XXX
+%\item The borough polygons were used XXX
 \item When analyzing the data, we encountered that the columns precipitation, snowfall and snow\_depth had missing values in the form of a ? ? character. For each column, we found 237 ($10.82\%$), 91 ($4.15\%$), 24 ($1.09\%$) empty values respectively. Considering that these variables are highly correlated with the average temperature, we decided to apply an iterative imputation with a decision tree regressor estimator to them.
-\item The 
-
-Table \ref{tab:dataset} summarizes the initial and final datasets length and the number of rows that were deleted.
-
-
-
---- The database had XX data and the new data is..
-green habia 3537586  186494 were deleted
-yellow había  7926168 borraron 337998
-MTA se mantuvo: tiene:     borraron 0 
-UBER había 18   borraron 0 
-
-Weather   borraron..
-Se hizo cruce con boroughs cruce de los polígonos..  Se uso para hacer los hit maps
---- Jhonatan lo que hizo con los poligonos
-
---- With MTA 
 \end{itemize}
 
 \begin{table}[h]
