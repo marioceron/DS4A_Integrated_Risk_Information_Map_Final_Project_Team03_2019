@@ -165,7 +165,7 @@ Figure \ref{fig:boxDistances} compares the number of trips made by Uber with the
 \label{fig:c}%
 \includegraphics[height=2.4in, width=4in] {green_avgamountperdistance_rush_month_boxplot.png}}%
 \caption{price per distance }
-\label{fig:boxTrips}%
+\label{fig:boxDistances}%
 \end{figure}
 
 
@@ -186,5 +186,74 @@ Figure \ref{fig:boxDistances} compares the number of trips made by Uber with the
 \label{fig:boxTrips}%
 \end{figure}
 
+
+
+
+
+\subsubsection{Heat Maps}
+
+In this section different maps were created in order to analyze which areas of the city, in terms of NTAs, are the ones with less coverage. Two different maps were created. The first one, Figure \ref{fig:heatMapTripsPick}, shows the number of pick-ups and and the pickup zone, of the different transportation options. On the other hand, Figure \ref{fig:heatMapTripsDrop}, shows the number of drop-offs and the zones.
+
+Table \ref{tab:dataset} shows the Links to access the interactive Heat Maps. The maps show the number of trips per NTA, in the different transportation options.
+
+\begin{table}[h]
+\begin{center}
+\label{tab:dataset}
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Figure Name}     & \textbf{Link to Map}  \\ 
+\hline
+Trips NTA Green Dropoff Map     & \href{https://marioceron-case-51.s3.amazonaws.com/datathon_html/trips_nta_green_dropoff_map.html}{Link}   \\
+Trips NTA MTA Dropoff Map       & \href{https://marioceron-case-51.s3.amazonaws.com/datathon_html/trips_nta_mta_dropoff_map.html}{Link}   \\
+Trips NTA Yellow Dropoff Map    & \href{https://marioceron-case-51.s3.amazonaws.com/datathon_html/trips_nta_yellow_dropoff_map.html}{Link}  \\
+Trips Population NTA Green Map  & \href{https://marioceron-case-51.s3.amazonaws.com/datathon_html/trips_pop_nta_green_map.html}{Link}      \\
+Trips Population NTA MTA Map    & \href{https://marioceron-case-51.s3.amazonaws.com/datathon_html/trips_pop_nta_mta_map.html}{Link}       \\
+Trips Population NTA Uber Map  & \href{https://marioceron-case-51.s3.amazonaws.com/datathon_html/trips_pop_nta_uber_map.html}{Link}      \\
+Trips Population NTA Yellow Map & \href{https://marioceron-case-51.s3.amazonaws.com/datathon_html/trips_pop_nta_yellow_map.html}{Link}\\
+ \hline
+\end{tabular}
+ \caption{Links to access interactive Heat Maps. The maps show the number of trips per NTA, in the different transportation options.}
+\end{center}
+\end{table}
+
+
+
+\begin{figure}%
+\centering
+\subfigure[Uber.]{%
+\label{fig:a}%
+\includegraphics[height=2in, width=3in]{uberNormPopulation_pickup.png}}%
+\subfigure[Yellow cab]{%
+\label{fig:b}%
+\includegraphics[height=2in, width=3in]{yellowNormPopulation_pickup.png}}
+\qquad
+\subfigure[Green cab ]{%
+\label{fig:c}%
+\includegraphics[height=2in, width=3in] {greenNormPopulation_pickup.png}}
+\subfigure[MTA ]{%
+\label{fig:d}%
+\includegraphics[height=2in, width=3in] {mtaNormPopulation_pickup.png}
+}%
+\caption{Heat maps of Pick ups. The maps show the number of trips per NTA, in the different transportation options. }
+\label{fig:heatMapTripsPick}%
+\end{figure}
+
+
+\begin{figure}%
+\centering
+\subfigure[Yellow cab trips]{%
+\label{fig:b}%
+\includegraphics[height=2in, width=3in]{yellowNormPopulation_dropoff.png}}
+\qquad
+\subfigure[Green cab trips]{%
+\label{fig:c}%
+\includegraphics[height=2in, width=3in] {greenNormPopulation_dropoff.png}}
+\subfigure[MTA trips]{%
+\label{fig:d}%
+\includegraphics[height=2in, width=3in] {mtaNormPopulation_dropoff.png}
+}%
+\caption{Heat maps of Drop offs. The maps show the number of trips per NTA, in the different transportation options. }
+\label{fig:heatMapTripsDrop}%
+\end{figure}
 
 

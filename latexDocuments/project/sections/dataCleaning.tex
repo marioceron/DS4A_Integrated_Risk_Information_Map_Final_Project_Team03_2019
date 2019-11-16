@@ -1,0 +1,52 @@
+\section{Data Wrangling and Data Cleaning}
+\label{subsec:dataCl}
+
+The main dataset used in the project contains information about Disasters in Colombia from 1998 to 2017. We found 8 files to integrate from the following links:
+
+\begin{itemize}
+\item Datos Abiertos Colombia: \\ \url{https://www.datos.gov.co/}  
+\item Unidad Nacional para la Gestión del Riesgo de Desastres: \\ \url{http://portal.gestiondelriesgo.gov.co/}{http://portal.gestiondelriesgo.gov.co/}.
+\end{itemize}
+ 
+The files are Microsoft Excel Files and contain the same information in the first 40 columns. However, the column names are not equal.
+
+All the information has been analyzed in notebooks, the notebooks can be found in the following links:
+\begin{itemize}
+\item Disasters dataset integration: \href{https://marioceron-case-51.s3.amazonaws.com/final_project/Disaster_DataSets_Integration.html}{link} 
+\item Disaster exploratory analysis: \href{https://marioceron-case-51.s3.amazonaws.com/final_project/disaster-exploration.html}{link}.
+\end{itemize}
+ 
+
+For Data Wrangling and cleaning the following steps were conducted:
+
+\begin{itemize}
+\item Load the 8 Excel Files as Pandas Data Frames. df\_desastres\_1998\_2012, df\_desastres\_2013, df\_desastres\_2014, df\_desastres\_2015, df\_desastres\_2016, df\_desastres\_2017, df\_desastres\_2018
+
+\item Parsing the date columns as pandas.datetime. 
+
+\begin{itemize}
+\item Two corrections were conducted with some missing values: \\
+31/11/2018 to 30/11/2018, 27/11/201 to 27/11/2018
+\end{itemize}
+
+\item Columns names standarization:
+
+\begin{itemize}
+\item Change column names in df\_desastres\_2018.
+\item Normalize type of disaster: we found the same kind of disaster written in different ways
+\end{itemize}
+\item Concatenate all dataSets.
+\item Transform Data type of the following columns to numerical values:
+
+\begin{itemize}
+\item muertos (deaths)
+\item personas (Population)
+\item heridos (Injured)
+\item familias (Families)
+\item viviendasdestru (Affected houses)
+\item ptepeat
+\item hectareas (hectares)
+\item otros (others)
+\end{itemize}
+
+\end{itemize}
