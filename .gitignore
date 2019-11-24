@@ -24,6 +24,7 @@
 *.synctex.gz
 **/.DS_Store
 .DS_Store
+DS_Store
 ## Latext extensions
 
 
