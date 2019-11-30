@@ -1,4 +1,4 @@
-﻿Código,Nombre MunicipiomCodigo depto, departamento, latitud,longuitud
+﻿codigo,municipio,codigo_depto,departamento,latitud,longuitud
 05002,Abejorral,05,Antioquia,5.75,-75.4166667
 05004,Abriaquí,05,Antioquia,6.6666667,-76.0833333
 50006,Acacías,50,Meta,3.9166667,-73.8333333
@@ -75,7 +75,7 @@
 23068,Ayapel,23,Córdoba,8.25,-75.25
 27073,Bagadó,27,Chocó,5.5,-76.25
 27075,Bahía Solano (Mútis),27,Chocó,6.2191667,-77.4077778
-"27077,Bajo Baudó (Pizarro),27,Chocó,""5,0"",-77.0833333"
+27077,Bajo Baudó (Pizarro),27,Chocó,5,0,-77.0833333"
 19075,Balboa,19,Cauca,2.1,-77.2
 66075,Balboa,66,Risaralda,4.9166667,-75.95
 08078,Baranoa,08,Atlántico,10.8,-74.9166667
