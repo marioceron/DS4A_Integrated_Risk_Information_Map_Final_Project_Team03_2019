@@ -14,13 +14,20 @@ Figure \ref{fig:er_model} shows the entity relationship model of the project. Th
 
 \item Population estimates: relates population by period, age groups, political division, id, and gender
 
+\item Weather estimates:  weather information from 1990 to 2018 (minimal temperatures, maximal temperatures, precipitations) (tables: historico\_cond\_metereologicas, load\_mintemp, load\_maxtemp, load\_precipitaciones)	
+
+
 \item Load tables: temporal tables for loading disasters, political division, population (tables: load\_disasters, load\_divipola, load\_populations)
 
-\item Views: wv\_disasters (summary table for disasters)
+\item Views: wv\_disasters (summary table for disasters). 
 
 \end{enumerate}
 
 The SQL script for the creation of the database on AWS can be download from this link: \\ \url{https://marioceron-case-51.s3.amazonaws.com/final_project/Script_Desastres_DB.sql}{}
+
+Full backup Database: \\ 
+\url{https://marioceron-case-51.s3.amazonaws.com/final_project/Script_Desastres_DB_full.sql}{}
+
 
  
 \begin{figure}[!htb]
@@ -49,6 +56,15 @@ Figure \ref{fig:databaseLoaded}  shows the database loaded to the AWS hosted dat
 \label{fig:databaseLoaded}
 \end{figure}
 
+
+The link between the front-end and the AWS-hosted databased was also stablished (see Figure \ref{fig:linkDASH_AWS}). 
+
+\begin{figure}[!htb]
+\center{\includegraphics[width=0.95\textwidth]
+{link_dash_aws}}
+\caption{Link between DASH and AWS stablished}
+\label{fig:linkDASH_AWS}
+\end{figure}
 
 
 

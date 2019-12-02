@@ -9,7 +9,7 @@ A non-technical user should be able to use this to get meaningful outputs and vi
 
 Figure \ref{fig:archi} shows the architecture of the proposed solution including the elements of the application at component level and its connections at high level (see deployment diagram). Additionally, it shows the application elements used for the Front and Back End. The figure also shows the names of the technologies used hosted on AWS cloud, i.e.: (Python, dash and libraries).   
 
-The following is the list AWS components used in the projec: 
+The following is the list AWS components used in the project: 
 \begin{enumerate}
 \item The machine who host the solution (Elastic Compute Cloud - EC2). 
 \item The Database  (Relational Database Service -RDS).
@@ -42,15 +42,34 @@ The following is the list AWS components used in the projec:
 
 The following is the link of the web-page created for the project.
 \begin{itemize}
-\item \url{http://ds4a-colombia-group03.tk/}
+%\item \url{http://ds4a-colombia-group03.tk/}
+\item \href{https://marioceron-case-51.s3.amazonaws.com/final_project/front_end/index.html}{http://ds4a-colombia-group03.tk/} 
+
 \end{itemize}
 
 Figure \ref{fig:muckup} shows the muckup of the project. In general terms our information system will provide a dynamic map of Colombia delivering:
+
 \begin{enumerate}
 \item The impact metric (or metrics) at the municipal level for a given category of events. Ability to display complementary metrics of interest for specific locations (utilities, healthcare facilities, first-responder facilities, etc).
 \item Considering the established association between extreme temperatures and the frequency of hydro-meteorological events, a projected extreme-temperature indicator for the 100 most vulnerable municipalities with 3 data points: Indicator value at Time 0 (1998), Time 1 (2018) and Time 3 (projected 2040)
 \item The indicator corresponds to the extreme temperature projection made by Climate Impact Lab for the number of days a year that register temperatures above 32 degrees Celsius.
+
+\item The timeline slider will facilitate the visualization of indexes using time intervals. 
+\item The map (Main View) will show the index adjusted by capacity ( Índice Ajustado por Capacidades) or other indexes previously defined. 
+\item The selection of a political division (departamento) in the main view restarts the map and will show the political view (departamento). In the latter the user can select the small political division (municipio) for update the graphics on the right side of the dashboard screen.
+\item The graphics on the right side of the dashboard shows absolute values.
+\item  By default, the map starts with the country view with political division (departamento)
 \end{enumerate}
+
+
+The production version of dashboard will show the following impact variables:
+\begin{enumerate}
+
+\item Deaths by 1000 inhabitants 
+\item People  affected by 1000 inhabitants 
+\item Houses  affected by 1000 inhabitants 
+\end{enumerate}
+
 
 \begin{figure}%
 \centering
