@@ -25,7 +25,6 @@ server = app.server
 
 from sqlalchemy import create_engine
 
-engine = create_engine('postgresql://group03user:sdfds234@3$@nps-demo-instance.ctpp1aoo5fia.us-east-1.rds.amazonaws.com/desastres')
 desastres = pd.read_sql("select cast(date_trunc('month',hd.fecha) as date) as mes_desastre, d.divipola_id, d.municipio, d.cod_departamento, d.departamento, \
 sum(muertos) muertos,sum(personas) personas,sum(familias) familias, \
 sum(viviendas_destruidas) viviendas_destruidas, sum(viviendas_averiadas) viviendas_averiadas \
@@ -97,7 +96,6 @@ DEFAULT_COLORSCALE = [
 
 DEFAULT_OPACITY = 0.8
 
-mapbox_access_token = "pk.eyJ1Ijoiam9obmF0aGFuOTQ5IiwiYSI6ImNrM3Vqcjc3dDAxYTAzbXBkZmxhdWkxanMifQ.-JkQQ2TLcI6C2TByYMUI_w"
 mapbox_style = "mapbox://styles/plotlymapbox/cjvprkf3t1kns1cqjxuxmwixz"
 
 # App layout
