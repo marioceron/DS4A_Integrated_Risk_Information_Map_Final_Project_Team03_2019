@@ -1,0 +1,35 @@
+INSERT INTO load_pobla_vul_depto(departamento,porc_pob_expuesta,cod_depto) values('
+Departamento,Porcentaje de Población Expuesta,Código departamento
+Cundinamarca,62.3%,25
+Arauca,61.8%,81
+Cauca,59.7%,19
+Boyacá,59.6%,15
+Caldas,53.4%,17
+Casanare,51.3%,85
+Tolima,51.0%,73
+Norte de Santander,47.1%,54
+Antioquia,46.8%,5
+Huila,44.0%,41
+Nariño,43.7%,52
+Magdalena,42.7%,47
+Chocó,42.5%,27
+Santander,39.5%,68
+Caqueta,39.3%,18
+Risaralda,36.8%,66
+Cesar,35.4%,20
+Valle del Cauca,33.6%,76
+Bolivar,33.1%,13
+Guainía,25.1%,94
+Bogota, D.C.,24.9%,11
+Putumayo,23.1%,86
+Córdoba,22.1%,23
+Meta,21.1%,50
+La Guajira,19.6%,44
+Vichada,17.0%,99
+Quindio,16.6%,63
+Sucre,12.2%,70
+Guaviare,6.2%,95
+Amazonas,5.9%,91
+Vaupés,4.3%,97
+Atlántico,0.8%,8
+Archipiélago de San Andrés - Providencia y Santa Catalina,0.0%,88
