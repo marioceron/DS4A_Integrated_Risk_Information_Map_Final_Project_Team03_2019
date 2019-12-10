@@ -1,13 +1,15 @@
 \section{Data Wrangling and Data Cleaning}
 \label{subsec:dataCl}
 
+\subsection{Data Cleaning}
+
 The data cleaning process was done in two steps:
 
 \begin{itemize}
 \item For yellow and green cab trips, the rows that have distances equal to $0$ were deleted. This, because we are aiming to take into account only the trips that traveled some distance.
 \item For yellow and green cab trips, the IQR (Inter Quartile Range) methodology was used to clean the outliers from the data. A variable called ``amount\_per\_distance'' was created. It was calculated as the ratio between ``total\_amount" and ``trip\_distance". With this new variable, the values that did not show a common relationship between distance and values were deleted.
 %\item The borough polygons were used XXX
-\item When analyzing the data, we encountered that the columns precipitation, snowfall and snow\_depth had missing values in the form of a ? ? character. For each column, we found 237 ($10.82\%$), 91 ($4.15\%$), 24 ($1.09\%$) empty values respectively. Considering that these variables are highly correlated with the average temperature, we decided to apply an iterative imputation with a decision tree regressor estimator to them.
+\item When analyzing the data, we encountered that the columns precipitation, snowfall and snow\_depth had missing values in the form of a ``? ?" character. For each column, we found 237 ($10.82\%$), 91 ($4.15\%$), 24 ($1.09\%$) empty values respectively. Considering that these variables are highly correlated with the average temperature, we decided to apply an iterative imputation with a decision tree regressor estimator to them.
 \end{itemize}
 
 \begin{table}[h]
@@ -28,7 +30,18 @@ Weather & 	2190 &  0 & 2190\\
 \end{center}
 \end{table}
 
+\subsection{Feature Engineering}
+\label{subsubsec:featureEng}
 
-Feature engineering:
-We created a new variable that measures the ratio between the total amount of the trip and the distance it traveled. This feature was created for Yellow trips and Green trips and was used for the outlier cleansing.
+The following explains the different new features that were created.
 
+\begin{itemize}
+\item A new variable that measures the ratio between the total amount of the trip and the distance it traveled. This feature was created for Yellow trips and Green trips and was used for the outlier cleaning.
+
+\item ``trips\_pickup": this variable contains the total number of pick ups of all the transportation means (green cabs, yellow cabs, and UBER, NTA), for every NTA. 
+
+\item ``log\_trips\_pickup": the previous variable ``trips\_pickup" was transformed to log space for better visualization of the values.
+
+\item ``yellow\_indicator": A threshold was applied to the variable ``log\_trips\_pickup". If the number of trips was $>$ threshold, then ``yellow\_indicator" is 0, otherwise 1. The threshold was defined as the 0.4 quantile of the variable ``log\_trips\_pickup".  This variable allow us to know in which NTAs, public transportation has not an adequate coverage, or in which ones public transportation is not commonly used. Both analyzed with the total number of trips per NTA. 
+
+\end{itemize}

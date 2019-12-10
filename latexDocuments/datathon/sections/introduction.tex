@@ -1,42 +1,96 @@
 \section{Introduction}
+\label{intro}
+This document describes the process followed to define, analyze and answer  the questions of the Datathon project. The data provided correspond to datasets from 2014 and 2015 of four different transportation means: Yellow cabs, Green cabs, UBER, and MTA. Additionally, one dataset provides weather information, and another one provides demographic information of the boroughs. 
 
 
 \subsection{Background Information}
+\label{intro_background}
 
-\subsubsection{Yellow cabs}
+New York city is the most populous city in the United States \cite{wikiNYC} with around 8.6 million inhabitants. It is expected to reach 9 million by 2040 \cite{growthNYC}, with Bronx being the borough with the highest increase in population with 14\% (between 2010 and 2040). Average Travel speeds in New York City is 10 mph, 4 mph or less in Brooklyn and Queens, and over 3 mph NYC Midtown. 
+
+
+In terms of transportation, according to \cite{trafficNYC2}, New York City is the second most congested city in the USA and number 42 in the world. It has one of the largest and oldest (1904) subway systems in the world. Due to its congestion, New York City inhabitants prefer to use public transportation ($67.2\%$ of workers commuting to work by this means in 2006 \cite{wikiNYC})
+
+However, MTA the worst commutes in the world \cite{commuteWorld} conmute time of 35.6 minutes on average commuting has been linked to obesity, stress, anxiety, depression, higher blood pressure, higher rates of divorce, neck and back pain and shorter lifespans.
+
+
+
+
+
+%In Midtown taxi trips are short distances... comparable ttrips by citi bikes are generally faster and less expensive...  between 1-1.5 miles are more than 5 minutes faster and 10 USD cheaper than taxi.. 
+%
+%Recent Travel trends:
+%- Number of trips of yellow cabs drop by XXX
+%- number o for hire vehicle registrations has grown (yellow cabs green cabs, black cabs, private cabs companies)..  72000 in 2015
+% - MTA 
+% -Higher speeds LESS dense residential areas of eastern queens and the northern sections of the Bronx Staten Island
+% - Average taxi speed.
+% 
+% 
+% between the 5 most congested cities in the USA one of the 
+%It has one of the largest subway systems in the world. It is also famous because people does not like to own a car they prefer to use public transportation.. Highest rate of public transportation use of any american city $67.2\%$ of workers commuting to work by this means in 2006.. Longest mean travel time for commuters. Half of all households do not own a car. In manhattan around 75\% 
+
+%2014 8.521 mllion
+%2015  8.522 million
+%2019  8.398.748 million
+
+%New York City's population is expected to reach 9 million by 2040 \cite{growthNYC}, based on recent projections created by the city. Among the five boroughs, the Bronx's growth is projected to be the highest at 14\% between 2010 and 2040. On the flip side, Manhattan is expected to grow by 6.7\% by 2040. Median age are 36.2 years between male and female.. rate of home ownership 32.6\% Percentage in POVERTY POWERTY RATE.. EMPLOYMENT STATUS
+
+%If these projections are accurate, Brooklyn will extend its lead over Queens as the largest borough in New York City, growing to nearly 3 million by 2040.
+%
+%
+%NYC mass transit..  
+%
+%NYC This city houses the highest number of millionaires and billionaires in the world.
+%
+%High rate of publich transit use
+%a city is the most mwith XXX inhabitants [ref]. It is commontly known for its transportation innovations 
+%NYC is the third most traffic congested city in the world \cite{trafficNYC}
+%
+%
+%3.7 million people were employed in New York City
+%Manhattan 56\% of all jobs
+%Of those working in Manhattan, 30% commute from within Manhattan, while 17% come from Queens, 16% from Brooklyn, 8% from the Bronx, and 2.5% from Staten Island. Another 4.5% commute to Manhattan from Nassau County and 2% from Suffolk County on Long Island, while 4% commute from Westchester County. 5% commute from Bergen and Hudson counties in New Jersey.
+%NYC 8.5 million inhabitants.
+
+%\textbf{future of NYC}
+%Traffic has been always a problem in NYC 
+
+%In terms of Yellow cabs, the following list summarizes key points of this transportation mode. 
+The following lists summarize key points of the different transportation means used in the Datathon. \\
+
+\textbf{Yellow Cabs}
 
 \begin{itemize}
 \item Mostly located in Manhattan
-\item It is very difficult to get a taxi out of Manhattan
+\item It is very difficult to get a taxi out of Manhattan, especially in rush hours.
 \item There are not many yellow cabs 130000, which are not enough.
-\item Very difficult to get a taxi in rush hours
-\item They have meters
 \item They can operate midtown and lower Manhattan and airports
 \item Rarely pick up outside manhattan
-
-
 \end{itemize}
 
 
-\subsubsection{Green cabs}
 
+\textbf{Green Cabs}
 \begin{itemize}
-\item Where created to standardise street hails outside of NYC. Brooklyn, Queens, The Bronx, upper Manhattan. 
-\item Created to provide more access to metered taxis. Less expensive than livery cars.
-\item They operate Manhattan Bello 110th St on the west side and below 96th street on the east side or at either la guardia or JFK airports.
+\item Where created to standardize street hails outside of NYC. They operate in Brooklyn, Queens, The Bronx, and upper Manhattan. 
+%\item Created to provide more access to metered taxis. Less expensive than livery cars.
+%\item They operate Manhattan Bello 110th St on the west side and below 96th street on the east side or at either la guardia or JFK airports.
 
 \item Airports: they can drop-off but not pick-up unless sent by a dispatcher
-\item They can be on call by dispatcher
-\item They are not allow to stop in the South of the upper west and upper east sides.
-\item The permits of Green cabs are cheaper than yellow cabs and easier to acquire. Cab license affordable for drivers.
-\item Rides cheaper than yellow
+%\item They can \textbf{be on call by dispatcher}
+\item They are not allowed to stop in the South of the upper west and upper east sides.
+%\item The permits of Green cabs are cheaper than yellow cabs and easier to acquire. Cab license affordable for drivers.
+\item Rides cheaper than Yellow cab rides
 \item For drivers green cabs was a way to get money without the pressure that yellow drivers have.
-\item Green drivers are also drivers or UBER
-\item 1/3 pick ups from Brooklyn,  1/3 Northern Manhattan, 1/3 Queens, a few in Bronx and Staten Island
-
+\item Green drivers  \textbf{are also drivers or UBER}
+\item 1/3 pick ups from Brooklyn,  1/3 Northern Manhattan, 1/3 Queens, a few in Bronx and Staten Island \\
 \end{itemize}
 
-\subsubsection{Uber}
+%\subsubsection{Uber}
+
+
+\textbf{UBER}
 
 \begin{itemize}
 \item Started in 2011 in Manhattan but expanded at the same time green.
@@ -44,17 +98,51 @@
 \item Uber has made yellow cabs steady but has impacted green that were just started 
 \item Connects drivers with more rides
 \item May 2015 busiest month on record.
-
-
 \end{itemize}
 
 
-\subsubsection{NYC Passengers}
 
+According to the mobility report of 2016 \cite{mobilityReportNYC2}, New York City is growing in jobs, residents and visitors. Its transportations modes have extend to mass transit, walking, and cycling. New York advances focus on applying technology to real-time traffic management, Select Bus Service routes, reducing travel times, Expanding the city's bicycle lane network, improving pedestrian access to transit. It is still required to invest in ways to keep the city moving. 
+
+
+Despite the incursion of new transportation means e.g. Green Cabs, UBER, among others, it is still difficult to catch a taxi from outer Boroughs to Manhattan. Lower access to legal taxi rides for people in outer Boroughs.
+%\item Green cabs try but never fulfilled their promise
+
+
+%\end{itemize}
+
+
+\subsection{Topic Question}
+
+\textbf{General question}: \\
+
+%\begin{center}
+%\tcbox[top=15pt,left=15pt,right=15pt,bottom=15pt, on line, fontupper=\Large]{ \textit{Is public transportation coverage in New York City \newline 
+%\textbf{equally attending} all areas?}}
+%\end{center}
+
+\begin{tcolorbox}[colback=white,top=6pt,bottom=6pt, breakable,arc=3pt,
+  outer arc=3pt]
+\begin{center}
+ \textit{Is public transportation coverage in New York City \\
+\textbf{equally attending} all areas?\\}
+\end{center}
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\textbf{Exploratory questions}: 
 \begin{itemize}
-\item Difficult to catch a taxi from outer Boroughs to Manhattan. Especially for green cabs where it is not worthy for drivers because they cannot pick up a fare on the way back out of Manhattan.
-\item Lower access to legal taxi rides for people in outer Boroughs
-\item Green cabs try but never fulfilled their promise
-
-
+\item What are the patterns related to unattended areas of public service?
+\item Is there are relationship between demographic information and peoples' choices of public transportation?
 \end{itemize}
+
+
+
+
+%\begin{center}
+%\begin{myboxi}[General question]
+%\center
+%\textit{Is public transportation coverage in New York City equally attending all areas?} \\ 
+%\end{myboxi}
+%\end{center}

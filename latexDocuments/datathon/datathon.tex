@@ -15,9 +15,33 @@
 \usepackage{url}
 \usepackage[colorlinks=true,urlcolor=blue]{hyperref}
 \renewcommand\UrlFont{\color{blue}}
+\usepackage[many]{tcolorbox}
+\usepackage{chngcntr}
+\counterwithout{table}{section}
 
 
-\title{Datathon Group 3}
+
+\newtcolorbox{myboxi}[1][]{
+  width=4in,
+  %breakable,
+  %title=#1,
+  %colback=white,
+  %colbacktitle=white,
+  %coltitle=black,
+  fonttitle=\bfseries,
+  bottomrule=0pt,
+  toprule=0pt,
+  leftrule=5pt,
+  rightrule=5pt,
+  %colframe=black,
+  %interior hidden,
+  %boxsep=0pt,
+ before=\begin{center},
+ after=\end{center},
+ hbox
+}
+
+\title{Datathon Project Group 3 DS4A}
 \author{ Johnathan Salamanca, Mario Cer\'{o}n, \\
 Carol Martinez, Javier Cocunubo, Jairo Nino, Alvaro Munoz
  }
@@ -26,72 +50,76 @@ Carol Martinez, Javier Cocunubo, Jairo Nino, Alvaro Munoz
 \begin{document}
 \maketitle
 
-\begin{abstract}
-
-In this document the project scope and plan for the Datathon are presented. The document provides information of the data cleaning process and some plots with preliminar results of the data wrangling process.
-
-
-\end{abstract}
+%\begin{abstract}
+%
+%This document describes the process followed to define, analyze and answer  the question of the Datathon project. The document provides information of the data cleaning process and some plots with preliminar results of the data wrangling process.
+%
+%
+%\end{abstract}
 
 %\section{Introduction}
+
+%This document describes the process followed to define, analyze and answer  the question of the Datathon project. 
+
+
 %You are asked to explore the
 %provided data and based on this, pose a question which you believe would be interesting to
 %answer. You and your team will then write a report detailing why you believe this question is
 %important and how you went about answering it.
 
 
-\section{Project Scoping \& Plan}
-\label{sec:app}
-
-\subsection{Scope}
-
-
-\begin{itemize}
-
-\item \textbf{Project Objective:}
-\begin{itemize}
-\item \textbf{Main question}: \textit{How do yellow cabs mean trip distance have changed over time (rush/non-rush hours) as a result of Uber's trips growth?} \\ 
-\textit{What are the patterns related to unattended areas of public service?} \\ 
-
-%sFrom this one we can analyze the mean income of the zones where yellow cabs drop-off zones changed.
-\end{itemize}
-
-\item \textbf{Main stakeholders}: the NYC citizen and government, and transportation industry (at all levels).
-
-\item \textbf{Boundaries of the project}:
-
-\begin{itemize}
-%\item We do not offer forecasts or modeling/ infer data.
-\item We will show metrics of the impact of Uber incursion in NYC over the other transportation means.
-\item The analysis will be made only on the information of the NYC Boroughs.
-%\item We do not offer recommendations, only do support to decision making process for the stakeholders.
-\end{itemize}
-
-\item \textbf{Risks:} 
-\begin{itemize}
-\item Data quality issues in the datasets.
-\item The data might be not sufficient to answer the proposed question. 
-\end{itemize}
-
-\end{itemize}
-
-
-\subsection{Plan}
-\begin{itemize}
-\item \textbf{Summary}: \textit{How do yellow cabs mean trip distance have changed over time (rush/non-rush hours) as a result of Uber's trips growth?}  From this one we can analyze the mean income of the zones where yellow cabs drop-off zones changed.
-
-
-\item \textbf{Expected Deliverable}: A report with the topic question, Data wrangling and Cleaning process, Exploratory Data Analysis EDA, Statistical Analysis and Modeling, Results Interpretation and Conclusions.
-
-\item \textbf{How to get there}: 
-\begin{itemize}
-\item Clean, wrangled and analyze the dataset.
-\item Conduct exploratory data analysis.
-\item Conduct Analysis \& modeling.
-\item Conclusions and final report (source code and power point presentation).
-\end{itemize}
-
-\end{itemize}
+%\section{Project Scoping \& Plan}
+%\label{sec:app}
+%
+%\subsection{Scope}
+%
+%
+%\begin{itemize}
+%
+%\item \textbf{Project Objective:}
+%\begin{itemize}
+%\item \textbf{Main question}: \textit{How do yellow cabs mean trip distance have changed over time (rush/non-rush hours) as a result of Uber's trips growth?} \\ 
+%\textit{What are the patterns related to unattended areas of public service?} \\ 
+%
+%%sFrom this one we can analyze the mean income of the zones where yellow cabs drop-off zones changed.
+%\end{itemize}
+%
+%\item \textbf{Main stakeholders}: the NYC citizen and government, and transportation industry (at all levels).
+%
+%\item \textbf{Boundaries of the project}:
+%
+%\begin{itemize}
+%%\item We do not offer forecasts or modeling/ infer data.
+%\item We will show metrics of the impact of Uber incursion in NYC over the other transportation means.
+%\item The analysis will be made only on the information of the NYC Boroughs.
+%%\item We do not offer recommendations, only do support to decision making process for the stakeholders.
+%\end{itemize}
+%
+%\item \textbf{Risks:} 
+%\begin{itemize}
+%\item Data quality issues in the datasets.
+%\item The data might be not sufficient to answer the proposed question. 
+%\end{itemize}
+%
+%\end{itemize}
+%
+%
+%\subsection{Plan}
+%\begin{itemize}
+%\item \textbf{Summary}: \textit{How do yellow cabs mean trip distance have changed over time (rush/non-rush hours) as a result of Uber's trips growth?}  From this one we can analyze the mean income of the zones where yellow cabs drop-off zones changed.
+%
+%
+%\item \textbf{Expected Deliverable}: A report with the topic question, Data wrangling and Cleaning process, Exploratory Data Analysis EDA, Statistical Analysis and Modeling, Results Interpretation and Conclusions.
+%
+%\item \textbf{How to get there}: 
+%\begin{itemize}
+%\item Clean, wrangled and analyze the dataset.
+%\item Conduct exploratory data analysis.
+%\item Conduct Analysis \& modeling.
+%\item Conclusions and final report (source code and power point presentation).
+%\end{itemize}
+%
+%\end{itemize}
 
 %\section{Topic Question}
 %\abel{sec:topicQ}
@@ -100,8 +128,8 @@ In this document the project scope and plan for the Datathon are presented. The 
 \input{sections/introduction}
 \input{sections/dataCleaning}
 \input{sections/dataAnalysis}
-%\input{sections/statisticsAnalysis}
-%\input{sections/statisticsConclusions}
+\input{sections/statisticsAnalysis}
+\input{sections/statisticsConclusions}
 
 
 %\begin{table}[h]
@@ -127,8 +155,8 @@ In this document the project scope and plan for the Datathon are presented. The 
 %\end{table}
 
 
-\bibliographystyle{abbrv}
-\bibliography{simple}
+\bibliographystyle{ieeetr}
+\bibliography{datathon}
 
 \end{document}
 This is never printed
