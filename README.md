@@ -23,9 +23,6 @@ AWS deployment and component diagram, ER Model and flow chart of Python Dash app
 # /datasets: 
 CSV files with datasets: divipola, lattitude_longuitud,demographics, temperatures and precipitation
 
-# /dashboard: 
-GeoJSON files for Colombian Map and HTML files, also dash example app: dash-opioid-epidemic
-
 # /latexDocuments: 
 /project: Reports and images in Latex format and PDF format: Report_project_final.pdf 
 
