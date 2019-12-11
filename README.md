@@ -1,24 +1,32 @@
 # ds4a_finalgroup_group03
 
-Project Group 3: 
-Mapa Integrado Información de Riesgo
+# Project Group 3: December 2019
+
 http://ds4a-colombia-group03.tk/
-Johnathan Salamanca, Mario Ceron,Carol Martinez, Javier Cocunubo, Jairo Nino, Alvaro Munoz
 
-Folders:
+Mapa Integrado Información de Riesgo
 
-/aws_diagrams: AWS deployment and component diagram, ER Model and flow chart of Python Dash app
+Johnathan Salamanca, Mario Cerón, Carol Martinez, Javier Cocunubo, Jairo Niño, Alvaro Muñoz
 
-/code
-	/dash: Relevante code of the Python Dash app
-	/html: Static content (welcome page)
+# Folders:
 
-/datasets: CSV files with datasets: divipola, lattitude_longuitud,demographics, temperatures and precipitation
+# /aws_diagrams: 
+AWS deployment and component diagram, ER Model and flow chart of Python Dash app
 
-/dashboard: GeoJSON files for Colombian Map and HTML files, also dash example app: dash-opioid-epidemic
+# /code
+/dash: Relevante code of the Python Dash app
+/html: Static content (welcome page)
 
-/latexDocuments: Reports in Latex format and PDF format
-	/project: Reports in Latex format and PDF format
+# /datasets: 
+CSV files with datasets: divipola, lattitude_longuitud,demographics, temperatures and precipitation
 
-/presentation: pptx presentation
+# /dashboard: 
+GeoJSON files for Colombian Map and HTML files, also dash example app: dash-opioid-epidemic
+
+# /latexDocuments: 
+/project: Reports in Latex format and PDF format
+
+# /presentation: 
+pptx presentation
+
 
