@@ -3,7 +3,7 @@
 
 
 \subsection{Users}
-A non-technical user should be able to use this to get meaningful outputs and visualizations. The target audience is a government official or someone in the private sector - it should be clear to them how to get value out of this and what that value is.
+Any person, Government officials, or someone in the private sector who wants to read and understand the basic risk profile of their region and make decisions with that information.
 
 \subsection{Architecture}
 
@@ -40,60 +40,37 @@ The following is the list AWS components used in the project:
 
 \subsection{Front End Design}
 
-The following is the link of the web-page created for the project.
-\begin{itemize}
-%\item \url{http://ds4a-colombia-group03.tk/}
-\item \href{https://marioceron-case-51.s3.amazonaws.com/final_project/front_end/index.html}{http://ds4a-colombia-group03.tk/} 
+The following is the link of the web-page created for the project. \\
+ \url{http://ds4a-colombia-group03.tk/}
+%\item \href{https://marioceron-case-51.s3.amazonaws.com/final_project/front_end/index.html}{http://ds4a-colombia-group03.tk/} 
 
-\end{itemize}
-
-Figure \ref{fig:muckup} shows the muckup of the project. In general terms our information system will provide a dynamic map of Colombia delivering:
+In general terms, the proposed information system will provide a dynamic map of Colombia with:
 
 \begin{enumerate}
-\item The impact metric (or metrics) at the municipal level for a given category of events. Ability to display complementary metrics of interest for specific locations (utilities, healthcare facilities, first-responder facilities, etc).
-\item Considering the established association between extreme temperatures and the frequency of hydro-meteorological events, a projected extreme-temperature indicator for the 100 most vulnerable municipalities with 3 data points: Indicator value at Time 0 (1998), Time 1 (2018) and Time 3 (projected 2040)
-\item The indicator corresponds to the extreme temperature projection made by Climate Impact Lab for the number of days a year that register temperatures above 32 degrees Celsius.
+\item Impact variables such as Deaths, People and Houses affected.
+\item A map (Main View) that will show the index adjusted by capacity ( \'Indice Ajustado por Capacidades). By default, the map starts with the country view with political division (departamento).
+\item A timeline slider will facilitate the visualization of the index using time intervals. 
+\item Considering the established association between extreme temperatures and the frequency of hydro-meteorological events, a projected extreme-temperature indicator for the 100 most vulnerable municipalities with 3 data points: Indicator value at Time 0 (1998), Time 1 (2018) and Time 3 (projected 2040). The indicator corresponds to the extreme temperature projection made by Climate Impact Lab for the number of days a year that register temperatures above 32 degrees Celsius.
 
-\item The timeline slider will facilitate the visualization of indexes using time intervals. 
-\item The map (Main View) will show the index adjusted by capacity ( Índice Ajustado por Capacidades) or other indexes previously defined. 
-\item The selection of a political division (departamento) in the main view restarts the map and will show the political view (departamento). In the latter the user can select the small political division (municipio) for update the graphics on the right side of the dashboard screen.
-\item The graphics on the right side of the dashboard shows absolute values.
-\item  By default, the map starts with the country view with political division (departamento)
+\item The option of showing political divisions views (vista de departamento). The user can select the small political subdivision (municipio) and the graphics on the right side of the dashboard screen are updated.
 \end{enumerate}
 
 
-The production version of dashboard will show the following impact variables:
-\begin{enumerate}
-
-\item Deaths by 1000 inhabitants 
-\item People  affected by 1000 inhabitants 
-\item Houses  affected by 1000 inhabitants 
-\end{enumerate}
 
 
 \begin{figure}%
 \centering
-\subfigure[]{%
+\subfigure[Presentation page]{%
 \label{fig:first}%
-\includegraphics[height=3in, width=6in]{riesgo3}}%
+\includegraphics[height=4in, width=6in]{01_Home_ds4a-colombia-group03-tk.png}}%
 \qquad
-\subfigure[]{%
+\subfigure[Main page]{%
 \label{fig:second}%
-\includegraphics[height=2in, width=3in]{riesgo2}}%
-\subfigure[]{%
-\label{fig:second}%
-\includegraphics[height=2in, width=3in]{riesgo6}}%
-\caption{Muckup of the Hydro-meteorological Risks In Colombia project. The main page (Figure \ref{fig:first}) will show the map of Colombia with the Risk Index, and will offer interactive options to get detail information of selected Municipalities. The page will provide the current risk index in addition to a line plot that shows a projected temperature indicator.}
+\includegraphics[height=4in, width=6in]{02_Home_mapa.png}}%
+%\subfigure[]{%
+%\label{fig:second}%
+%\includegraphics[height=2in, width=3in]{riesgo6}}%
+\caption{Front End: Integrated Map of Risk Information in Colombia. The main page (Figure \ref{fig:first}) will show the map of Colombia with the Risk Index, and will offer interactive options to get detail information of selected Municipalities, risk index and a projected temperature indicator.}
 \label{fig:muckup}%
 \end{figure}
 
-
-
-
-
-\itemize{
-\item{Outline of who the primary users would be and how they would interact with the app}
-\item{Descriptions of app features}
-\item{The datasets your team is planning on using}
-\item{How you plan on using each of these datasets/how they contribute to your app}
-}
