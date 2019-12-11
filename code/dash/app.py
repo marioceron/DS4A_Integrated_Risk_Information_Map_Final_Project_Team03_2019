@@ -404,7 +404,7 @@ def update_bar_plots(year_range, indicador, divipola):
     if len(divipola) != 5:
         return grafico_barras
     else:
-        return [grafico_barras, grafico_temp]
+        return [grafico_barras]#, grafico_temp]
 
 
 
