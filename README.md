@@ -14,7 +14,7 @@ Johnathan Salamanca, Mario Cerón, Carol Martinez, Javier Cocunubo, Jairo Niño,
 AWS deployment and component diagram, ER Model and flow chart of Python Dash app
 
 # /code
-/dash: Relevante code of the Python Dash app
+/dash: Relevante code of the Python Dash app (app.py)
 /html: Static content (welcome page)
 
 # /datasets: 
@@ -24,7 +24,7 @@ CSV files with datasets: divipola, lattitude_longuitud,demographics, temperature
 GeoJSON files for Colombian Map and HTML files, also dash example app: dash-opioid-epidemic
 
 # /latexDocuments: 
-/project: Reports in Latex format and PDF format
+/project: Reports and images in Latex format and PDF format: Report_project_final.pdf 
 
 # /presentation: 
 pptx presentation
