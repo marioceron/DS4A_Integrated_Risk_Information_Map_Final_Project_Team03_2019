@@ -35,4 +35,10 @@ https://github.com/jssalamanca1967/ds4a_finalgroup_group03/
 # /presentation: 
 * pptx presentation
 
+# Presentation :
+
+Animated Gif with the presentation:
+
+![Final Project Presentation](presentation/Bogota_Group_03_Presentation.gif)
+
 
