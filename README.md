@@ -41,4 +41,7 @@ Animated Gif with the presentation:
 
 ![Final Project Presentation](presentation/Bogota_Group_03_Presentation.gif)
 
+# Entity Relationsip (ER) Model - Integrated Risk Information Map:
+
+![ER relationship Model Integrated Risk Map](aws_diagrams/Project_Group03_ERModel.jpg)
 
