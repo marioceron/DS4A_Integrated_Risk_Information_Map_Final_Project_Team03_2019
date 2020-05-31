@@ -52,5 +52,7 @@ Animated Gif with the presentation:
 
 # Jupyter Notebook with Results in PDF:
 
+
 # Final Report:
 
+https://github.com/marioceron/DS4A_Integrated_Risk_Information_Map_Final_Project_Team03_2019/latexDocuments/project/Report_project_final.pdf
