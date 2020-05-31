@@ -1,4 +1,4 @@
-#  Integrated Risk Information Map Final Project 
+#  Integrated Risk Information Map - Final Project 
 #  Datascience for All (DS4A) - Team 03: 
 
 Datascience for All (DS4A) - Integrated Risk Information Map - Final Project - Group 3: December 2019
