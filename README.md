@@ -28,12 +28,13 @@ https://github.com/jssalamanca1967/ds4a_finalgroup_group03/
 
 # /datasets: 
 * CSV files with datasets: divipola, lattitude_longuitud,demographics, temperatures and precipitation
+* Database: 7 tables: divipola, eventos, riesgo_indices, historico_desastres, estimacion_poblaciones, historico_cond_meteorologicas, divi_hist_cond_met; and one view: vw_desastres
 
 # /latexDocuments: 
 * /project: Reports and images in Latex format and PDF format: Report_project_final.pdf 
 
 # /presentation: 
-* pptx presentation
+* pptx presentation, movie and animated gif.
 
 # Presentation :
 
@@ -41,7 +42,15 @@ Animated Gif with the presentation:
 
 ![Final Project Presentation](presentation/Bogota_Group_03_Presentation.gif)
 
+# AWS Component Diagram:
+
+![AWS Component Diagram Integrated Risk Map](aws_diagrams/AWS_Component_Diagram_project_group_03.jpg)
+
 # Entity Relationsip (ER) Model - Integrated Risk Information Map:
 
 ![ER relationship Model Integrated Risk Map](aws_diagrams/Project_Group03_ERModel.jpg)
+
+# Jupyter Notebook with Results in PDF:
+
+# Final Report:
 
