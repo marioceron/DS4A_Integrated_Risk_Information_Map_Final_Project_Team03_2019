@@ -55,4 +55,4 @@ Animated Gif with the presentation:
 
 # Final Report:
 
-https://github.com/marioceron/DS4A_Integrated_Risk_Information_Map_Final_Project_Team03_2019/latexDocuments/project/Report_project_final.pdf
+https://github.com/marioceron/DS4A_Integrated_Risk_Information_Map_Final_Project_Team03_2019/blob/9186c94952e4d93369de00f5b391a45f95d85d05/latexDocuments/project/Report_project_final.pdf
