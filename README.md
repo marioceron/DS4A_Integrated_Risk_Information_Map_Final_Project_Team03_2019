@@ -1,15 +1,19 @@
-# ds4a_finalgroup_group03
+# DS4A_Integrated_Risk_Information_Map_Final_Project_Team03_2019: 
 
 # Project Group 3: December 2019
 
-http://ds4a-colombia-group03.tk/
+Integrated Risk Information Map - Mapa Integrado Información de Riesgo
 
-Mapa Integrado Información de Riesgo
+Mario Cerón, Johnathan Salamanca, Carol Martinez, Javier Cocunubo, Jairo Niño, Alvaro Muñoz
 
-Johnathan Salamanca, Mario Cerón, Carol Martinez, Javier Cocunubo, Jairo Niño, Alvaro Muñoz
-#Repository: 
+#Repositories: 
+
+https://github.com/marioceron/DS4A_Integrated_Risk_Information_Map_Final_Project_Team03_2019
 
 https://github.com/jssalamanca1967/ds4a_finalgroup_group03/
+
+# Introduction: 
+
 
 # Folders:
 
