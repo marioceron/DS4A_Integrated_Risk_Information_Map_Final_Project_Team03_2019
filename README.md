@@ -53,7 +53,7 @@ Animated Gif with the presentation:
 
 ![ER relationship Model Integrated Risk Map](aws_diagrams/Project_Group03_ERModel.jpg)
 
-# Jupyter Notebook with Results in HTML S3 bucket:
+# Jupyter Notebook with Exploratory Data Analysis (HTML stored in S3 bucket):
 
 Disasters dataset integration:
 
