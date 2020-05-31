@@ -22,7 +22,9 @@ https://github.com/jssalamanca1967/ds4a_finalgroup_group03/
 * AWS deployment and component diagram, ER Model and flow chart of Python Dash app
 
 # /code
-* /dash: Relevante code of the Python Dash app (app.py)
+* /dash: Relevante code of the Python Dash app (app.py); to usage: run local ´python app.py´
+* /dash/geojsons: include 3 files : colombia-dptos.geo.json, colombia-mpios.geo.json, colombia_limpio.geojson
+(Colombian political division: Departments and municipalities)
 
 * /html: Static content (welcome page)
 
@@ -32,6 +34,7 @@ https://github.com/jssalamanca1967/ds4a_finalgroup_group03/
 
 # /latexDocuments: 
 * /project: Reports and images in Latex format and PDF format: Report_project_final.pdf 
+and 5 incremental deliveries versions of the report.
 
 # /presentation: 
 * pptx presentation, movie and animated gif.
@@ -50,7 +53,15 @@ Animated Gif with the presentation:
 
 ![ER relationship Model Integrated Risk Map](aws_diagrams/Project_Group03_ERModel.jpg)
 
-# Jupyter Notebook with Results in PDF:
+# Jupyter Notebook with Results in HTML S3 bucket:
+
+Disasters dataset integration:
+
+https://marioceron-case-51.s3.amazonaws.com/final_project/Disaster_DataSets_Integration.html
+
+Disaster exploratory analysis: 
+
+https://marioceron-case-51.s3.amazonaws.com/final_project/disaster-exploration.html
 
 
 # Final Report:
