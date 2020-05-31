@@ -18,7 +18,7 @@ https://github.com/jssalamanca1967/ds4a_finalgroup_group03/
 # Folders:
 
 # /aws_diagrams: 
-AWS deployment and component diagram, ER Model and flow chart of Python Dash app
+* AWS deployment and component diagram, ER Model and flow chart of Python Dash app
 
 # /code
 * /dash: Relevante code of the Python Dash app (app.py)
