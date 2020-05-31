@@ -1,6 +1,6 @@
 # DS4A_Integrated_Risk_Information_Map_Final_Project_Team03_2019: 
 
-Project Group 3: December 2019
+Datascience for All (DS4A) - Integrated Risk Information Map - Final Project - Group 3: December 2019
 
 Integrated Risk Information Map - Mapa Integrado Información de Riesgo
 
