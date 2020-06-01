@@ -1,9 +1,9 @@
-#  Integrated Risk Information Map - Final Project 
+#  Integrated Risk Information Map in Colombia - Final Project 
 #  Datascience for All (DS4A) - Team 03: 
 
 Datascience for All (DS4A) - Integrated Risk Information Map - Final Project - Group 3: December 2019
 
-Integrated Risk Information Map - Mapa Integrado Información de Riesgo
+Integrated Risk Information Map in Colombia - Mapa Integrado Información de Riesgo en Colombia
 
 Mario Cerón, Johnathan Salamanca, Carol Martinez, Javier Cocunubo, Jairo Niño, Alvaro Muñoz
 
@@ -16,6 +16,27 @@ https://github.com/jssalamanca1967/ds4a_finalgroup_group03/
 # Introduction: 
 
 
+Integrated Risk Information Map in Colombia:
+
+Present the development process of the tool called: Integrated Map of Risk Information in Colombia.
+It presents key information of the general situation of the country in terms of risk and can be used as a tool to guide future decisions in the different regions.
+
+The Dashboard Web Application, the team expects to enable any person to find, read and understand the basic risk profile of their region of interest and also understand about climate associated risks. All this based on open data philosophy.
+The work is set up to do 3 things:
+• Find historic evidence of those claims.
+• Create an index to capture and monitor that imbalance in the allocation of coping capabilities and resources.
+• Offer actionable information to both the general public and administration officials to improve their understanding of future impact of climatic events.
+
+The developed tool could be of value for the people in general, outside our regular interests, activities and industries.
+
+# Datasets sourced:
+
+The main dataset used in the project is from the Colombia Risk of Disaster Management Unit (Unidad de Gesti ́on de Riesgos y Desastres) UNGRD [2]. The dataset contains information about the risk management associated with natural phenomena, socio-natural, technologic, and human- based non-intentional incidents reported in Colombia in the last 10 years (38626 records). Some of the fields found in the dataset are: Date, Department, Municipality, Event Name, Code, Dead, Wounded, Disappeared, Affected People, Affected Families, Affected Houses, among others.
+
+Also use a dataset from the National Administrative Department for Statistics DANE. It is a time series between 1985 to 2020 and contains demographic information, per depart- ment code.
+
+
+
 # Folders:
 
 # /aws_diagrams: 
@@ -24,7 +45,7 @@ https://github.com/jssalamanca1967/ds4a_finalgroup_group03/
 # /code
 * /dash: Relevante code of the Python Dash app (app.py); to usage: run local ´python app.py´
 * /dash/geojsons: include 3 files : colombia-dptos.geo.json, colombia-mpios.geo.json, colombia_limpio.geojson
-(Colombian political division: Departments and municipalities)
+(Divipola: Colombian political division: Departments and municipalities)
 
 * /html: Static content (welcome page)
 
