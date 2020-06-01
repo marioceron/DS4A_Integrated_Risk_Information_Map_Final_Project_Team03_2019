@@ -40,6 +40,7 @@ The dataset contains information about the risk management associated with natur
 
 Also use a dataset from the National Administrative Department for Statistics DANE. It is a time series between 1985 to 2020 and contains demographic information, per depart- ment code.
 
+The final report (see below at the end of this file) shows all the technical details for: front-end, back-end, AWS diagrams, SQL scripts, and Python dash code used for the Dashboard.
 
 # Folders:
 
