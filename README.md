@@ -96,4 +96,4 @@ https://github.com/marioceron/DS4A_Integrated_Risk_Information_Map_Final_Project
 
 # Video of Dashboard:
 
-[![Watch the video]](/presentation/ds4a-final.gif)
+[![Watch the video]](presentation/ds4a-final.gif)
