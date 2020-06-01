@@ -23,18 +23,22 @@ It presents key information of the general situation of the country in terms of 
 
 The Dashboard Web Application, the team expects to enable any person to find, read and understand the basic risk profile of their region of interest and also understand about climate associated risks. All this based on open data philosophy.
 The work is set up to do 3 things:
+
 • Find historic evidence of those claims.
+
 • Create an index to capture and monitor that imbalance in the allocation of coping capabilities and resources.
+
 • Offer actionable information to both the general public and administration officials to improve their understanding of future impact of climatic events.
 
 The developed tool could be of value for the people in general, outside our regular interests, activities and industries.
 
 # Datasets sourced:
 
-The main dataset used in the project is from the Colombia Risk of Disaster Management Unit (Unidad de Gesti ́on de Riesgos y Desastres) UNGRD [2]. The dataset contains information about the risk management associated with natural phenomena, socio-natural, technologic, and human- based non-intentional incidents reported in Colombia in the last 10 years (38626 records). Some of the fields found in the dataset are: Date, Department, Municipality, Event Name, Code, Dead, Wounded, Disappeared, Affected People, Affected Families, Affected Houses, among others.
+The main dataset used in the project is from the Colombia Risk of Disaster Management Unit (Unidad de Gesti ́on de Riesgos y Desastres) UNGRD. 
+
+The dataset contains information about the risk management associated with natural phenomena, socio-natural, technologic, and human- based non-intentional incidents reported in Colombia in the last 10 years (38626 records). Some of the fields found in the dataset are: Date, Department, Municipality, Event Name, Code, Dead, Wounded, Disappeared, Affected People, Affected Families, Affected Houses, among others.
 
 Also use a dataset from the National Administrative Department for Statistics DANE. It is a time series between 1985 to 2020 and contains demographic information, per depart- ment code.
-
 
 
 # Folders:
